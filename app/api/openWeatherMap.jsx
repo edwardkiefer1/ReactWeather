@@ -17,8 +17,8 @@ var axios = require('axios');
        } else {
          return res.data.main.temp;
        }
-     }, function (err) {
-       throw new Error(err.response.data.message);
+     }, function () {
+       throw new Error('Unable to fetch weather');
      });
    }
  }
